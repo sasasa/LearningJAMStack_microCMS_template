@@ -34,6 +34,18 @@ module.exports = {
         includePaths: [require("path").resolve(__dirname, "node_modules")],
       },
     },
+    { 
+      resolve: 'gatsby-source-microcms',
+      options: { 
+        apiKey: '7b2a4db8-5130-4889-ba77-f08629dbfdd5',
+        serviceId: 'sasasa',
+        apis: [
+          { 
+            endpoint: 'information',
+          }
+        ],
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
