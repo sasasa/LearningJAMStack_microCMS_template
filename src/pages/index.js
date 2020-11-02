@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Image from "../components/image";
 import { Link } from "gatsby";
 import homeImg from "../images/home.jpg"
 import jigyo1Img from "../images/jigyo1.jpg"
@@ -12,7 +13,8 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <Row style={{maxWidth:`960px`}}> 
-        <img src={homeImg} style={{width:`100%`,marginBottom:`2rem`}} />
+        {/* <img src={homeImg} style={{width:`100%`,marginBottom:`2rem`}} /> */}
+        <Image file="home.jpg" alt="ホーム画像" style={{width:`100%`,marginBottom:`2rem`}} />
     </Row>
     <Row>
       <Col xs={12} md={6} style={{maxWidth:`480px`}}>

@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `ヤー・スペーステクノロジー`,
     description: `【架空の会社】宇宙工学と意識エネルギー循環研究でオンリーワンを目指します`,
-    author: `@atomyah`,
-    siteUrl: `https://yah-space.tech`,
+    author: `@sasasa`,
+    siteUrl: `https://zealous-clarke-b499ae.netlify.app`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
