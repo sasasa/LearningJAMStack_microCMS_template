@@ -38,7 +38,13 @@ const Image = (props) => (
       //const imageSizes = image.node.childImageSharp.sizes; ←サイズFIXしたい時
       return (
         /*<Img alt={props.alt} sizes={imageSizes} /> ←サイズFIXしたい時 */
-        <Img fluid={image.node.childImageSharp.fluid} alt={props.alt} style={props.style} />
+        <Img
+          fluid={image.node.childImageSharp.fluid}
+          alt={props.alt}
+          style={props.style}
+          loading="eager"
+          durationFadeIn={50}
+        />
       );
     }}
   />
